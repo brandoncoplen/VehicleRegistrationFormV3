@@ -1,0 +1,144 @@
+<!--Vehicle Registration Form
+	Author: Brandon Coplen
+	Version 3
+	08/11/2021
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous"><!--link for font awsome icons-->
+  	<title>Vehicle Profile</title>
+
+	
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+		<img src="IE_SECONDARY_LOGO_WEB_180x@2x.png" alt="IELogo"> <!--Image from the actual Integrated Engineering website-->
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+						<h3>Welcome to Integrated Engineering</h3> <!--Title/intro instructions-->
+
+					<h4>Before you search for parts, please create a vehicle profile</h4>
+					<h4 class="heading-section">Create Your Vehicle Profile here:</h4>
+				</div>
+			</div>
+			
+									<h3 class="mb-4">Vehicle Profile</h3>
+									
+
+							  
+									<form method="POST" id="contactForm" name="contactForm"><!--start of the form-->
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="text" class="form-control" name="name" id="name" placeholder="Name"><!--name input-->
+												</div>
+											</div>
+											<div class="col-md-6"> 
+												<div class="form-group">
+													<input type="email" class="form-control" name="email" id="email" placeholder="Email"><!--Email input-->
+												</div>
+											</div>
+											<div class="col-md-6"> 
+												<div class="form-group">
+													<input type="password" class="form-control" name="password" id="password" placeholder="New Password"><br><br><!--password input-->
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="cars" class="form-control">Make:</label><!--make selection-->
+													<select id='make-selector' name="make">
+														<option value="" disabled selected>Select your option</option>
+														<option value="Volkswagen">Volkswagen</option>
+														<option value="Audi">Audi</option>
+													</select>
+													
+													<label for="model" class="form-control">Model</label> <!--model selection-->
+													<select id='model-selector' name="model">
+														<option>select make first</option>
+													</select><br><br>
+
+												
+													
+													<div class="col-md-12">
+														<div class="form-group" id="parts-section">
+															<label for="parts" class="form-control"><h3>Please select what kind of parts you need</h3></label><!--parts selection with parts list checkboxes-->
+															<input type="checkbox" id="option1" name="option" value="Engine" required>
+															<label for="option1"> Engine</label><br>
+															<input type="checkbox" id="option2" name="option" value="Exterior">
+															<label for="option2"> Exterior</label><br>
+															<input type="checkbox" id="option3" name="option" value="Interior">
+															<label for="option3"> Interior</label><br>
+															<input type="checkbox" id="option4" name="option" value="Wheels">
+															<label for="option4"> Wheels</label><br><br>
+														</div>
+													</div>
+
+													<div class="col-md-12">
+														<div class="form-group" id="driver-section">
+															<label for="driver" class=form-control><h3>What Kind of driver are you?</h3></label><!--driver type selection with radio button options-->
+															<input type="radio" id="driver1" name="driver" value="30" required>
+															<label for="driver1">Comfort</label><br>
+															<input type="radio" id="driver2" name="driver" value="60">
+															<label for="driver2">Sport</label><br>  
+															<input type="radio" id="driver3" name="driver" value="100">
+															<label for="driver3">Race</label><br><br>
+														</div>
+													</div>
+
+													
+
+														<div class="col-md-12">
+															<div class="form-group">
+																<label for="partstTime" class="form-group"><h3>Select when you need the parts by</h3></label> <!--Parts time section with calendar input-->
+																<input type="datetime-local" class="form-control" name="partsTime" id="partsTime" placeholder="partsTime"
+																	name="meeting-time"><br><br>
+															</div>
+														</div>
+
+														
+															<button class= "fas fa-car" type="submit">Submit</button>
+														  <p id="log"></p>
+
+													
+
+
+													
+												</div>
+											</div>
+											</div>
+										</div>
+									</form>
+								</div>
+		</section>						
+		
+	</section>
+
+	<footer>
+		<!--links to github and validity-->
+		<p><a href="https://github.com/brandoncoplen/VehicleRegistrationForm2" target="_blank" style="color:#fb4513";>Github </a><br><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fbrandoncoplen.github.io%2FVehicleRegistrationForm2%2F" target="_blank" style="color:#fb4513";>Validity</a>
+
+		</p>
+
+	</footer>
+	<!--script-->
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  
+
+	</body>
+</html>
+
