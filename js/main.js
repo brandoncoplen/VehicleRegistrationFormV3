@@ -1,6 +1,9 @@
 
 
+
+
 (function($) {
+	
 //main function for choosing a car model
 	
 carModels = {'Volkswagen':["GTI", "Bug", "Tiguan"], 'Audi':["S Class", "A Class", "RS Class"]} //car makes with model options
@@ -36,10 +39,13 @@ $('#model-selector').on('change', function(element) {
 })
 
 
+	
 
 
 
-	"use strict";
+
+
+	
 
 
   // Form
@@ -75,6 +81,8 @@ $('#model-selector').on('change', function(element) {
 			
 			
 		}
+
+	
 		
 
 		function logSubmit(event) { //form submit event function
@@ -89,3 +97,6 @@ $('#model-selector').on('change', function(element) {
 	contactForm();
 
 })(jQuery);
+
+
+

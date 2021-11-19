@@ -65,7 +65,11 @@
 													<label for="model" class="form-control">Model</label> <!--model selection-->
 													<select id='model-selector' name="model">
 														<option>select make first</option>
+														<option value="GTI">GTI</option>
 													</select><br><br>
+
+													<button id='btnLoad'>Load Info</button>
+													<div id="dataContainer"></div>
 
 												
 													
@@ -86,11 +90,11 @@
 													<div class="col-md-12">
 														<div class="form-group" id="driver-section">
 															<label for="driver" class=form-control><h3>What Kind of driver are you?</h3></label><!--driver type selection with radio button options-->
-															<input type="radio" id="driver1" name="driver" value="30" required>
+															<input type="radio" id="driver1" name="driver" value="Comfort" required>
 															<label for="driver1">Comfort</label><br>
-															<input type="radio" id="driver2" name="driver" value="60">
+															<input type="radio" id="driver2" name="driver" value="Sport">
 															<label for="driver2">Sport</label><br>  
-															<input type="radio" id="driver3" name="driver" value="100">
+															<input type="radio" id="driver3" name="driver" value="Race">
 															<label for="driver3">Race</label><br><br>
 														</div>
 													</div>
@@ -99,9 +103,9 @@
 
 														<div class="col-md-12">
 															<div class="form-group">
-																<label for="partstTime" class="form-group"><h3>Select when you need the parts by</h3></label> <!--Parts time section with calendar input-->
+																<label for="partsTime" class="form-group"><h3>Select when you need the parts by</h3></label> <!--Parts time section with calendar input-->
 																<input type="datetime-local" class="form-control" name="partsTime" id="partsTime" placeholder="partsTime"
-																	name="meeting-time"><br><br>
+																	name="meeting-time" value="partsTime"><br><br>
 															</div>
 														</div>
 
@@ -137,7 +141,8 @@
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/ajax.js"></script>
 
 	</body>
 </html>
